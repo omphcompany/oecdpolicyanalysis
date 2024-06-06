@@ -1,23 +1,65 @@
-# Hack4Good - NLP for policy trend analysis (OECD)
+# OECD.AI - Policy Analyzer
+(Credits and Original Author(s): [Hack4Good 2023](https://www.analytics-club.org/hack4good) and [OECD.ORG](https://www.oecd.org/switzerland/))
+<br> [Disclaimer and Absolute Rights](https://github.com/omphcompany/oecdpolicyanalysis/blob/main/disclaimer.txt)
 
-[![Release](https://img.shields.io/github/v/release/dvdblk/hack4good-oecd)](https://github.com/dvdblk/hack4good-oecd/releases)
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](.pre-commit-config.yaml)
-[![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)](pyproject.toml)
+[^1]: Saad-Falcon, J., Barrow, J., Siu, A., Nenkova, A., Yoon, D. S., Rossi, R. A., & Dernoncourt, F. (2023). [*PDFTriage: Question Answering over Long, Structured Documents*](https://arxiv.org/abs/2309.08872). arXiv preprint arXiv:2309.08872
 
-This project was created for the [Hack4Good 2023](https://www.analytics-club.org/hack4good) hackathon in collaboration with [OECD](https://www.oecd.org/switzerland/).
-
-<p align="center" width="100%">
-<img src="docs/preview.png" alt="image" width="75%" height="auto">
-</p>
-
-
+## Original Design Approach: 
 * GUI via Streamlit
 * Extracts semi-structured PDF into structured text using [Adobe PDF Extract API](https://developer.adobe.com/document-services/docs/overview/pdf-extract-api/)
 * Uses PDFTriage[^1] style prompting (similar to ReAct) to answer questions about the documents.
 * Answers to questions provide the section where they were found in the document.
 
+## New Design & Approach: OECD AI Policy Analyzer Using LLMs
 
-[^1]: Saad-Falcon, J., Barrow, J., Siu, A., Nenkova, A., Yoon, D. S., Rossi, R. A., & Dernoncourt, F. (2023). [*PDFTriage: Question Answering over Long, Structured Documents*](https://arxiv.org/abs/2309.08872). arXiv preprint arXiv:2309.08872
+This repository presents a significant enhancement to the original OECD AI Policy Analyzer tool.  Moving beyond basic content extraction with the Adobe PDF Extract API, this version leverages Large Language Model (LLM)-based content analysis and structuring to align with the specific requirements and objectives of academic research.
+
+## Key Enhancements:
+
+## LLM-Powered Content Analysis:
+
+### Deep Understanding: 
+Utilizes advanced natural language processing capabilities of LLMs to understand the nuances, context, and subtleties within AI policy documents.
+
+### Structured Representation: 
+Transforms unstructured policy text into structured formats, facilitating systematic analysis and comparison.
+
+### Qualitative and Mixed-Methods: 
+Enables researchers to employ qualitative or mixed-methods approaches to analyze the content, drawing upon established scholarly works and data analysis techniques.
+
+### Academic Research Focus:
+
+### Tailored to Research Objectives: 
+Allows customization of analysis parameters and research questions to align with specific academic research goals.
+
+### Comparative Analysis: 
+Facilitates in-depth comparison of national AI strategies, agendas, and action plans across different countries, as reported on OECD.AI.
+
+### Pattern and Trend Identification: 
+Employs LLM capabilities to identify patterns, trends, and emerging themes within AI policy documents, aiding in the development of new research insights.
+Integration with OECD.AI:
+
+### Data Source: 
+Leverages the comprehensive collection of AI policy documents available on the OECD.AI platform.
+
+### Policy Landscape Analysis: 
+Provides a powerful tool for analyzing the global AI policy landscape and understanding the diverse approaches taken by different nations.
+
+## How it Works:
+
+* Data Input: Utilizes policy documents directly from OECD.AI.
+* LLM-based Analysis: Applies LLM models to perform content analysis, structuring, and extraction of relevant information.
+* Research Framework Integration: Allows users to apply qualitative or mixed-methods research frameworks to analyze the structured data.
+* Comparative Analysis: Enables comparison of AI policies across countries, identifying similarities, differences, and best practices.
+* Results: Generates comprehensive reports, visualizations, and exportable data to support academic research and policy analysis.
+
+## Disclaimer:
+
+This enhanced tool is a research prototype designed to support academic inquiry. While it leverages advanced LLM technology, users should exercise critical judgment when interpreting results and consider the tool as a complement to, not a replacement for, rigorous scholarly analysis.
+
+### Note:
+
+This enhanced OECD AI Policy Analyzer tool serves as a valuable resource for researchers, policymakers, and stakeholders engaged in the study of AI governance. By integrating LLM-powered analysis with academic research methodologies, it empowers users to explore the complexities of AI policy in greater depth and contribute to the development of evidence-based policy recommendations.
 
 ## GUI Quickstart
 
